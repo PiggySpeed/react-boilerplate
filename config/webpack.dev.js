@@ -3,11 +3,8 @@ const webpack = require('webpack');
 const config = {
   mode: 'development',
   devtool: 'eval-source-map',
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   devServer: {
-    contentBase: 'build',
+    static: 'build',
     hot: true,
     port: 8000
   }
